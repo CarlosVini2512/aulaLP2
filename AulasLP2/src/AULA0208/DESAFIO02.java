@@ -1,11 +1,11 @@
-package AULA0208;
-
 import java.util.TimeZone;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
-public class DESAFIO02 {
-	//calcular a diferenÃ§a de horas e segundos entre alguma cidade, pais, estado - ENTRE O BRASIL
+class DESAFIO02 {
+
+
+	//calcular a diferença de horas e segundos entre alguma cidade, pais, estado - ENTRE O BRASIL
 	//E A EUROPA;
 	
     public static void main(String args[]) {
@@ -14,10 +14,10 @@ public class DESAFIO02 {
     
         Calendar systemDate = Calendar.getInstance();
 	    Calendar saoPauloDate = Calendar.getInstance(TimeZone.getTimeZone("America/Sao_Paulo"));
-    	Calendar brazilWestDate = Calendar.getInstance(TimeZone.getTimeZone("Brazil/West"));
+    	Calendar bruxelasDate = Calendar.getInstance(TimeZone.getTimeZone("Europe/Bruxelas"));
 
-	    System.out.println("America/Sao_Paulo: " + Desafio2.getFormatarData(saoPauloDate));
-    	System.out.println("Brazil/GMT-4: " + Desafio2.getFormatarData(brazilWestDate));
+	    System.out.println("Sao_Paulo/GMT-3: " + DESAFIO02.getFormatarData(saoPauloDate));
+    	System.out.println("Bruxelas: " + DESAFIO02.getFormatarData(bruxelasDate));
     }
 
     private static String getFormatarData(Calendar date) {
